@@ -1,0 +1,20 @@
+// test
+@use "./scss/test/testUse.scss";
+@import "./scss/test/testImport.scss";
+.testUse,.testImport{
+    width: 200px;
+    height: 200px;
+}
+.testUse{
+    background-color: testUse.$testUseTomato;
+    font-family: testUse.$testUseFontFamily, serif;
+}
+.testImport{
+    background-color: $testImportOrange;
+    font-family: $testImportFontFamily, serif;
+    //font-family: 'TT Lakes', serif;
+}
+
+// go-go
+@import "./scss/reset.css";
+@import "./scss/fonts.scss";

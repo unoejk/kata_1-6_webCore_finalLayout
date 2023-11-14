@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/asset/font/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('/src/asset/font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/asset/font/TTLakes-Regular.woff') format('woff'),
+    url('/src/asset/font/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;    // 400
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/asset/font/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('/src/asset/font/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/src/asset/font/TTLakes-Medium.woff') format('woff'),
+    url('/src/asset/font/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/src/asset/font/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('/src/asset/font/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/src/asset/font/TTLakes-Bold.woff') format('woff'),
+    url('/src/asset/font/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;      // 700
+    font-style: normal;
+}
