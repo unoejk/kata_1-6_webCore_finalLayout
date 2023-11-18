@@ -1,0 +1,33 @@
+
+.roundButton{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__text{
+        color: $color--font--dark;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+    }
+
+    &__svg{
+        //display: block;
+        border-radius: 50%;
+
+        .roundButton:focus>&{
+            box-shadow: 0 0 0 4px $color--border--light;
+        }
+
+        &>path{
+            transition: fill .3s ease-in-out;
+
+            .roundButton:hover>&{
+                fill: #8d2343;
+            }
+        }
+    }
+}

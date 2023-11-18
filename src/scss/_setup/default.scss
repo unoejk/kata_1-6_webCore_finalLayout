@@ -1,0 +1,41 @@
+
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100vh;
+}
+
+button{
+    border: none;
+    padding: 0;
+
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0 none transparent;
+    width: fit-content;
+    height: fit-content;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    color: inherit;
+    outline: 0 none transparent;
+}
+p+p{
+    margin-top: 1.2em;
+}
+
+html{
+    color: #1B1C21;
+    font-family: 'TT Lakes', 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+}

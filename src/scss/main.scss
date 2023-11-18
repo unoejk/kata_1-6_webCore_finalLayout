@@ -1,0 +1,6 @@
+
+.main{
+    @media (min-width: $screenWidth--xl) {
+        margin-left: $leftSideBarWidth;
+    }
+}

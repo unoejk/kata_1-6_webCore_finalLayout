@@ -1,0 +1,56 @@
+
+// colors
+$color--background--light: #FFF;
+$color--background--dark: #F8F8F8;
+
+$color--border--lightAlt: #EAEAEA;
+$color--border--lightPlus: #D9FFF5;
+$color--border--light: #B8FFEC;
+$color--border--dark: #41F6D7;
+
+$color--font--light: #7E7E82;
+$color--font--dark: #1B1C21;
+$color--font--warning: #FF3E79;
+$color--font--warningMode: #8d2343;
+
+$color--shadow: rgba(14, 24, 80, 0.20);
+
+$color--svg--main: #41F6D7;
+$color--svg--warning: #FF3E79;
+$color--svg--warningMode: #8d2343;
+$color--svg--dirtyLight: #80949F;
+$color--svg--dirtyDark: #6B7B84;
+
+//$color--white--light: #FFF;
+//$color--white--dark: #F8F8F8;
+//$color--grey--light: #EAEAEA;
+//$color--grey--dark: #7E7E82;
+//$color--dirtyGrey--light: #80949F;
+//$color--dirtyGrey--dark: #6B7B84;
+//$color--black: #1B1C21;
+//$color--blue--lightPlus: #D9FFF5;
+//$color--blue--light: #B8FFEC;
+//$color--blue--dark: #41F6D7;
+//$color--red--light: #FF3E79;
+//$color--red--dark: #8d2343;
+
+// fonts
+$fontFamily: 'TT Lakes', 'Arial', sans-serif;
+
+// screen (на макете контрольная точна между 320 и 360, поэтому такие xs)
+$screenWidth--xsMax: 359px;
+$screenWidth--xs: 360px;
+$screenWidth--smMax: 575px;
+$screenWidth--sm: 576px;
+//$screenWidth--mdMax: 767px;
+//$screenWidth--md: 768px;
+//$screenWidth--lgMax: 991px;
+//$screenWidth--lg: 992px;
+$screenWidth--xlMax: 1199px;
+$screenWidth--xl: 1200px;
+//$screenWidth--xxlMax: 1399px;
+//$screenWidth--xxl: 1400px;
+
+// calc
+$leftSideBarWidth: 320px;
+

@@ -1,0 +1,22 @@
+
+.displayNone{
+    display: none;
+
+    &--screen--xs{
+        @media (max-width: $screenWidth--smMax) {
+            display: none;
+        }
+    }
+
+    &--screen--sm{
+        @media (min-width: $screenWidth--sm) and (max-width: $screenWidth--xlMax) {
+            display: none;
+        }
+    }
+
+    &--screen--xl{
+        @media (min-width: $screenWidth--xl) {
+            display: none;
+        }
+    }
+}
