@@ -15,17 +15,13 @@
         }
     }
 
-    //padding: 24px 8px 32px 8px;
-    //&>*{padding: 0 8px;}
-    //
-    //@media (min-width: $screenWidth--xs) {
-    //    padding: 24px 12px 32px 12px;
-    //    &>*{padding: 0 12px;}
-    //}
-
     &__controlsBlock{
         display: flex;
         gap: 16px;
+
+        @media (min-width: $screenWidth--oversize) {
+            display: none;
+        }
     }
 
     &__mail{

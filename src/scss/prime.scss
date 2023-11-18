@@ -1,0 +1,126 @@
+
+.prime{
+    display: flex;
+    flex-direction: column;
+    background-color: $color--background--dark;
+
+    @media (min-width: $screenWidth--oversize) {
+        gap: 32px;
+    }
+
+    .topHeader{
+        box-shadow: inset 0 -2px 0 -1px $color--border--lightPlus;
+        z-index: 1;
+
+        @media (min-width: $screenWidth--xl) and (max-width: $screenWidth--oversizeMax) {
+            position: absolute;
+            right: 0;
+            background-color: transparent;
+            box-shadow: 0 0 0 0 transparent;
+            height: fit-content;
+            margin: 42px 30px 0 0;
+            padding: 0;
+        }
+
+        .topHeader__block{
+            @media (min-width: $screenWidth--xl) {
+                gap: 32px;
+            }
+        }
+    }
+
+    &__header{}
+
+    &__content{
+        flex-grow: 1;
+        align-self: center;
+        background-color: $color--background--dark;
+
+        @media (min-width: $screenWidth--oversize) {
+            width: 1000px;
+            border-radius: 8px;
+            background-color: $color--background--light;
+            box-shadow: 0 0 52px 16px $color--shadow, inset 0 0 0 1px $color--border--lightPlus;
+        }
+    }
+    &__footer{
+        height: 200px;
+        box-shadow: inset 0 2px 0 -1px $color--border--lightPlus;
+        @media (min-width: $screenWidth--oversize) {
+            background-color: $color--background--light;
+            padding: 0 calc((100vw - 1000px)/2);
+        }
+    }
+
+    // header settings
+    &__headerLeftBlock{
+        @media (max-width: $screenWidth--smMax) {
+            &:after{
+                content: '';
+                width: 2px;
+                height: 32px;
+                border-radius: 1px;
+                background-color: $color--border--lightAlt;
+                margin: 4px;
+            }
+        }
+        @media (min-width: $screenWidth--xl) and (max-width: $screenWidth--oversizeMax) {
+            display: none;
+        }
+    }
+    &__headerBurgerBlock{
+        @media (min-width: $screenWidth--sm) and (max-width: $screenWidth--oversizeMax){
+            &:after{
+                content: '';
+                width: 2px;
+                height: 32px;
+                border-radius: 1px;
+                background-color: $color--border--lightAlt;
+                margin: 4px;
+            }
+        }
+    }
+    &__headerLogoBlock{}
+    &__headerRightBlock{}
+    &__callbackBlock{
+        @media (max-width: $screenWidth--smMax) {
+            display: none;
+        }
+        @media (min-width: $screenWidth--sm) and (max-width: $screenWidth--xlMax) {
+            &:after{
+                content: '';
+                width: 2px;
+                height: 32px;
+                border-radius: 1px;
+                background-color: $color--border--lightAlt;
+                margin: 4px;
+            }
+        }
+        @media (min-width: $screenWidth--xl) and (max-width: $screenWidth--oversizeMax) {
+            display: none;
+        }
+        @media (min-width: $screenWidth--oversize) {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            //.roundButton__text{
+            //    display: none;
+            //}
+        }
+    }
+    &__settingsBlock{
+        @media (max-width: $screenWidth--xlMax) {
+            .roundButton__text{
+                display: none;
+            }
+        }
+        @media (min-width: $screenWidth--oversize) {
+            //position: absolute;
+            //left: 50%;
+            //transform: translateX(-50%);
+            .roundButton__text{
+                display: none;
+            }
+        }
+    }
+}

@@ -14,28 +14,6 @@
         display: flex;
         align-items: center;
         gap: 16px;
-
-        &--haveSeparatorAfter--xs:after{
-            @media (max-width: $screenWidth--smMax) {
-                content: '';
-                width: 2px;
-                height: 32px;
-                border-radius: 1px;
-                background-color: $color--border--lightAlt;
-                margin: 4px;
-            }
-        }
-
-        &--haveSeparatorAfter--smLg:after{
-            @media (min-width: $screenWidth--sm) and (max-width: $screenWidth--xlMax) {
-                content: '';
-                width: 2px;
-                height: 32px;
-                border-radius: 1px;
-                background-color: $color--border--lightAlt;
-                margin: 4px;
-            }
-        }
     }
 
     &__item{}

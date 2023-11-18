@@ -9,9 +9,12 @@
     @media (min-width: $screenWidth--xs) {
         padding: 12px 24px;
     }
-
     @media (min-width: $screenWidth--xl) {
-        padding: 40px 32px 12px 32px;
+        padding: 32px;
+    }
+    @media (min-width: $screenWidth--oversize) {
+        padding: 24px 32px;
+        gap: 24px;
     }
 
     &__header{
@@ -27,6 +30,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 4px;
+
+        @media (min-width: $screenWidth--oversize) {
+            margin-bottom: 24px;
+        }
 
         &:before{
             content: '';
