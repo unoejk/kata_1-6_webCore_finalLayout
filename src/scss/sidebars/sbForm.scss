@@ -1,2 +1,80 @@
 
-.sbForm{}
+.sbForm{
+    flex-grow: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width: $screenWidth--xs) {
+        padding: 12px 24px;
+    }
+
+    @media (min-width: $screenWidth--xl) {
+        padding: 40px 32px 12px 32px;
+    }
+
+    &__header{
+        color: $color--font--dark;
+        font-family: $fontFamily;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: -0.6px;
+
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 40px;
+            width: 4px;
+            border-radius: 0 4px 4px 0;
+            background-color: $color--svg--main;
+        }
+    }
+
+    &__label{}
+
+    &__input,&__textArea{
+        color: $color--font--dark;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+
+        width: 100%;
+
+        &::placeholder{
+            color: $color--font--lightPlus;
+        }
+    }
+
+    &__input{}
+
+    &__textArea{}
+
+    &__warningText{
+        color: $color--font--light;
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 114.286% */
+    }
+
+    &__textLink{
+        color: $color--font--warning;
+    }
+
+    &__submitBtn{
+        align-self: flex-end;
+    }
+}

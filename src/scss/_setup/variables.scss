@@ -8,6 +8,7 @@ $color--border--lightPlus: #D9FFF5;
 $color--border--light: #B8FFEC;
 $color--border--dark: #41F6D7;
 
+$color--font--lightPlus: #B5B6BC;
 $color--font--light: #7E7E82;
 $color--font--dark: #1B1C21;
 $color--font--warning: #FF3E79;
@@ -50,6 +51,8 @@ $screenWidth--xlMax: 1199px;
 $screenWidth--xl: 1200px;
 //$screenWidth--xxlMax: 1399px;
 //$screenWidth--xxl: 1400px;
+$screenWidth--oversizeMax: 1599px;
+$screenWidth--oversize: 1600px;
 
 // calc
 $leftSideBarWidth: 320px;

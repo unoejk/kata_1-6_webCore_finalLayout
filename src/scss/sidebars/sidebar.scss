@@ -12,11 +12,21 @@
     display: flex;
     flex-direction: column;
 
+    .topHeader{
+        background-color: transparent;
+    }
+
     &--left{
-        z-index: 1;
-        left: 0;
+        z-index: 2;
         transform: translateX(-100%);
         box-shadow: 16px 0 52px 0 $color--shadow;
+
+        // screen fix (когда меняем плавно ширину экрана, чтобы левый сайдбар не мелькал,
+        // когда его позиция возвращается на родину за пределы экрана, или вылазит, если он уже открыт)
+        left: -$leftSideBarWidth;
+        &.sidebar--isOpen{
+            left: 0;
+        }
 
         @media (min-width: $screenWidth--sm) {
             width: $leftSideBarWidth;
@@ -28,12 +38,9 @@
             box-shadow: 0 0 0 0 transparent;
             transition-duration: 0s;
 
-            // v1
             transform: translateX(0);
-
-            // v2
-            //transform: translateX(-100%) !important;
-            //left: $leftSideBarWidth;
+            position: static;
+            flex-shrink: 0;
         }
     }
 

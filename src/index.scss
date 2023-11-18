@@ -24,10 +24,11 @@
 
 // _rpeatingBlocks
 @import "scss/_rpeatingBlocks/generalText";
-@import "scss/_rpeatingBlocks/roundBtn";
+@import "scss/_rpeatingBlocks/topHeader";
+@import "scss/_rpeatingBlocks/roundBtn";;
+@import "scss/_rpeatingBlocks/goBtn";
 
 // go-go
-@import "scss/header";
 @import "scss/main";
 
 // sidebars
@@ -37,14 +38,6 @@
 @import "scss/sidebars/sbFooter";
 @import "scss/sidebars/sbForm";
 
-// _notStylized
-@import "scss/_notStylized/openBurger";
-@import "scss/_notStylized/openCall";
-@import "scss/_notStylized/openChat";
-@import "scss/_notStylized/sidebarBurger";
-@import "scss/_notStylized/sidebarCall";
-@import "scss/_notStylized/sidebarChat";
-
 // _setup
-@import "scss/_setup/displayNone";
+@import "scss/_setup/patterns";
 
