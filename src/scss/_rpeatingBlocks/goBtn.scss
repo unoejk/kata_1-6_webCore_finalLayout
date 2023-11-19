@@ -1,2 +1,38 @@
 
-.goBtn{}
+.goBtn{
+    width: 136px;
+    height: 32px;
+    background-color: $color--svg--warning;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 8px;
+
+    color: $color--background--light;
+    text-align: right;
+    font-family: $fontFamily;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    white-space: pre;
+
+    transition: background-color .3s ease-in-out;
+
+    &:after{
+        content: url("/src/assets/svg/simpleArrow.svg");
+        height: 24px;
+    }
+
+    &:focus{
+        box-shadow: 0 0 0 4px $color--border--light;
+    }
+
+    &:hover{
+        background-color: $color--svg--warningMode;
+    }
+}

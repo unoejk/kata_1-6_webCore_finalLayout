@@ -14,7 +14,7 @@
     }
     @media (min-width: $screenWidth--oversize) {
         padding: 24px 32px;
-        gap: 24px;
+        //gap: 24px;
     }
 
     &__header{
@@ -32,7 +32,7 @@
         margin-bottom: 4px;
 
         @media (min-width: $screenWidth--oversize) {
-            margin-bottom: 24px;
+            margin-bottom: 32px;
         }
 
         &:before{
@@ -48,6 +48,10 @@
 
     &__label{}
 
+    &__labelForTextarea{
+        //flex-grow: 1;
+    }
+
     &__input,&__textArea{
         color: $color--font--dark;
         font-family: $fontFamily;
@@ -58,6 +62,13 @@
         letter-spacing: -0.2px;
 
         width: 100%;
+        border-radius: 8px;
+        box-shadow: inset 0 0 0 1px $color--border--lightAlt;
+        padding: 12px 16px;
+
+        &:focus{
+            box-shadow: inset 0 0 0 2px $color--border--light;
+        }
 
         &::placeholder{
             color: $color--font--lightPlus;
@@ -66,7 +77,14 @@
 
     &__input{}
 
-    &__textArea{}
+    &__textArea{
+        height: 118px;
+        //height: 100%;
+
+        @media (min-width: $screenWidth--oversize) {
+            height: 236px;
+        }
+    }
 
     &__warningText{
         color: $color--font--light;
@@ -79,9 +97,23 @@
 
     &__textLink{
         color: $color--font--warning;
+        transition: color .3s ease-in-out;
+
+        &:focus{
+            text-decoration: underline;
+        }
+        &:hover{
+            //color: $color--font--light;
+            color: $color--font--warningMode;
+        }
+        &:visited{
+            //color: $color--font--warningMode;
+        }
     }
 
     &__submitBtn{
         align-self: flex-end;
     }
+
+    //.goBtn{}
 }

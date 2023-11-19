@@ -106,9 +106,18 @@
                 </button>
             </div>
         </header>
-        <form class="sbForm"></form>
+        <form class="sbForm">
+            <h1 class="sbForm__header">Заказать звонок</h1>
+            <label class="sbForm__label">
+                <input class="sbForm__input" type="tel" placeholder="Телефон">
+            </label>
+            <p class="sbForm__warningText">
+                Нажимая “отправить”, вы даете согласие на <a class="sbForm__textLink" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="sbForm__textLink" href="#">политикой конфиденциальности</a>
+            </p>
+            <button class="sbForm__submitBtn goBtn" type="submit">   ОТПРАВИТЬ</button>
+        </form>
     </aside>
-    <aside class="sidebar sidebar--right sidebarChat sidebar--isOpen">
+    <aside class="sidebar sidebar--right sidebarChat">
         <header class="sidebar__header topHeader">
             <div class="topHeader__block">
                 <button class="topHeader__item roundButton closeRightSidebar">
@@ -130,13 +139,13 @@
             <label class="sbForm__label">
                 <input class="sbForm__input" type="email" placeholder="Электронная почта">
             </label>
-            <label class="sbForm__label">
-                <textarea class="sbForm__textArea" type="text" placeholder="Сообщение"></textarea>
+            <label class="sbForm__label sbForm__labelForTextarea">
+                <textarea class="sbForm__textArea" placeholder="Сообщение"></textarea>
             </label>
             <p class="sbForm__warningText">
                 Нажимая “отправить”, вы даете согласие на <a class="sbForm__textLink" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="sbForm__textLink" href="#">политикой конфиденциальности</a>
             </p>
-            <button class="sbForm__submitBtn goBtn" type="submit">Отправить</button>
+            <button class="sbForm__submitBtn goBtn" type="submit">   ОТПРАВИТЬ</button>
         </form>
     </aside>
 

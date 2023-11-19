@@ -26,7 +26,7 @@
             transition: fill .3s ease-in-out;
 
             .roundButton:hover>&{
-                fill: #8d2343;
+                fill: $color--svg--warningMode;
             }
         }
     }
