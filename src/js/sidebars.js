@@ -1,7 +1,6 @@
 'use strict'
 
-export const useSidebarsOpening=()=>{
-
+export const useSidebars=()=>{
     const sidebarBurger=document.querySelector('.sidebarBurger')
     const sidebarCall=document.querySelector('.sidebarCall')
     const sidebarChat=document.querySelector('.sidebarChat')

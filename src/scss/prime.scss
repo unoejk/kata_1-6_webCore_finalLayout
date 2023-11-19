@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: $color--background--dark;
+    //flex-grow: 0;
+    //flex-shrink: 0;
 
     @media (min-width: $screenWidth--oversize) {
         gap: 32px;
@@ -32,9 +34,14 @@
     &__header{}
 
     &__content{
-        flex-grow: 1;
+        width: 100vw;
         align-self: center;
         background-color: $color--background--dark;
+
+        @media (min-width: $screenWidth--xl) {
+            //width: calc(100vw - $leftSideBarWidth);
+            width: calc(100vw - 320px);
+        }
 
         @media (min-width: $screenWidth--oversize) {
             width: 1000px;

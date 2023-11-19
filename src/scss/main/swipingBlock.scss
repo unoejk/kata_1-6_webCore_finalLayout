@@ -1,0 +1,123 @@
+
+.swipingBlock{
+    //background-color: tomato;
+    //background-color: #3c3f41;
+    width: 100%;
+
+    &__header{}
+
+    &__viewer{
+        //background-color: chartreuse;
+        padding: 0 16px;
+        //overflow: visible;
+
+        @media (min-width: $screenWidth--xs) {
+            padding: 0 24px;
+        }
+        @media (min-width: $screenWidth--xl) {
+            padding: 0 32px;
+        }
+
+        &:after{}
+    }
+
+    &__contentList{
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px 24px;
+
+            box-sizing: border-box;
+            max-height: 160px;
+            overflow: hidden;
+        }
+
+        .collapsingBlock--isOpen &{
+            max-height: fit-content;
+        }
+    }
+
+    &__contentItem{
+        width: fit-content;
+
+        @media (min-width: 768px) {
+            width: auto;
+        }
+    }
+
+    &__card{
+        box-sizing: border-box;
+        width: 240px;
+        height: 72px;
+        background-color: $color--background--light;
+        box-shadow: inset 0 0 0 1px $color--border--lightAlt;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        transition: background-color .3s ease-in-out;
+
+        @media (min-width: 768px) {
+            width: 100%;
+        }
+
+        &:after{
+            content: url("/src/assets/svg/roundArrow.svg");
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            width: 40px;
+            height: 40px;
+        }
+        &:focus{
+            box-shadow: inset 0 0 0 2px $color--border--light;
+        }
+        &:hover{
+            background-color: $color--border--lightAlt;
+        }
+
+        &--isBig{
+            height: 160px;
+        }
+    }
+
+    &__cardLogo{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__cardText{
+        color: $color--font--dark;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+
+        position: absolute;
+        left: 16px;
+        top: 16px;
+    }
+
+    &__pagination{
+        position: static;
+        margin-top: 16px;
+        --swiper-pagination-bullet-inactive-color: #DDDDDD;
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-theme-color: #B5B6BC;
+        --swiper-pagination-bullet-size: 12px;
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
+        --swiper-pagination-bullet-horizontal-gap: 6px;
+    }
+}
+
+.fakeImg{
+    //background-color: #3c3f41;
+    background-color: tomato;
+    width: 128px;
+    height: 28px;
+}

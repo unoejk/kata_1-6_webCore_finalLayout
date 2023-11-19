@@ -25,10 +25,11 @@
 // _rpeatingBlocks
 @import "scss/_rpeatingBlocks/generalText";
 @import "scss/_rpeatingBlocks/topHeader";
-@import "scss/_rpeatingBlocks/roundBtn";;
+@import "scss/_rpeatingBlocks/roundBtn";
+@import "scss/_rpeatingBlocks/collapseBtn";
 @import "scss/_rpeatingBlocks/goBtn";
 
-// go-go
+// uncategorized
 @import "scss/pageWrapper";
 @import "scss/prime";
 
@@ -38,6 +39,21 @@
 @import "scss/sidebars/sbNav";
 @import "scss/sidebars/sbFooter";
 @import "scss/sidebars/sbForm";
+
+// sidebars
+@import "scss/sidebars/overlay";
+@import "scss/sidebars/sidebar";
+@import "scss/sidebars/sbNav";
+@import "scss/sidebars/sbFooter";
+@import "scss/sidebars/sbForm";
+
+// main
+@import "scss/main/main";
+@import "scss/main/mainHeader";
+@import "scss/main/mainNav";
+@import "scss/main/mainManifesto";
+@import "scss/main/swipingBlock";
+@import "scss/main/tableBlock";
 
 // _setup
 @import "scss/_setup/patterns";
