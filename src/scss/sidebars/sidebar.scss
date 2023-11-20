@@ -39,7 +39,7 @@
             transition-duration: 0s;
 
             transform: translateX(0);
-            position: static;
+            position: sticky;
             flex-shrink: 0;
 
             .closeLeftSidebar{

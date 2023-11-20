@@ -1,5 +1,5 @@
 
-.swipingBlock{
+.listBlock{
     //background-color: tomato;
     //background-color: #3c3f41;
     //width: 100%;
@@ -32,7 +32,7 @@
                 display: none;
             }
 
-            .swipingBlock--isBig &{
+            .listBlock--isBig &{
                 height: 160px;
             }
         }
@@ -49,6 +49,7 @@
 
     &__list{
         @media (min-width: $screenWidth--md) {
+            transform: none !important;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 16px 24px;
@@ -56,8 +57,6 @@
             //box-sizing: border-box;
             max-height: 160px;
             overflow: hidden;
-
-            transform: none !important;
         }
 
         @media (min-width: $screenWidth--xl) {
@@ -110,7 +109,7 @@
             background-color: $color--border--lightAlt;
         }
 
-        .swipingBlock--isBig &{
+        .listBlock--isBig &{
             height: 160px;
         }
     }
@@ -119,7 +118,7 @@
         max-width: 100%;
         max-height: 100%;
 
-        .swipingBlock--isBig &{
+        .listBlock--isBig &{
             display: none;
         }
     }
@@ -138,7 +137,7 @@
         top: 16px;
         display: none;
 
-        .swipingBlock--isBig &{
+        .listBlock--isBig &{
             display: block;
         }
     }
