@@ -2,14 +2,15 @@
 .swipingBlock{
     //background-color: tomato;
     //background-color: #3c3f41;
-    width: 100%;
+    //width: 100%;
 
     &__header{}
-
     &__viewer{
         //background-color: chartreuse;
         padding: 0 16px;
         //overflow: visible;
+        position: relative;
+        overflow: hidden;
 
         @media (min-width: $screenWidth--xs) {
             padding: 0 24px;
@@ -18,18 +19,49 @@
             padding: 0 32px;
         }
 
-        &:after{}
+        &:before, &:after{
+            content: "";
+            display: block;
+            width: 24px;
+            height: 72px;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+
+            @media (min-width: $screenWidth--md) {
+                display: none;
+            }
+
+            .swipingBlock--isBig &{
+                height: 160px;
+            }
+        }
+        &:before{
+            background: linear-gradient(90deg, $color--background--dark 16.84%, transparent 100%);
+            //background-color: tomato;
+            left: 0;
+        }
+        &:after{
+            background: linear-gradient(270deg, $color--background--dark 16.84%, transparent 100%);
+            right: 0;
+        }
     }
 
-    &__contentList{
-        @media (min-width: 768px) {
+    &__list{
+        @media (min-width: $screenWidth--md) {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 16px 24px;
 
-            box-sizing: border-box;
+            //box-sizing: border-box;
             max-height: 160px;
             overflow: hidden;
+
+            transform: none !important;
+        }
+
+        @media (min-width: $screenWidth--xl) {
+            gap: 16px 32px;
         }
 
         .collapsingBlock--isOpen &{
@@ -37,10 +69,10 @@
         }
     }
 
-    &__contentItem{
+    &__item{
         width: fit-content;
 
-        @media (min-width: 768px) {
+        @media (min-width: $screenWidth--md) {
             width: auto;
         }
     }
@@ -59,7 +91,7 @@
         padding: 16px;
         transition: background-color .3s ease-in-out;
 
-        @media (min-width: 768px) {
+        @media (min-width: $screenWidth--md) {
             width: 100%;
         }
 
@@ -78,7 +110,7 @@
             background-color: $color--border--lightAlt;
         }
 
-        &--isBig{
+        .swipingBlock--isBig &{
             height: 160px;
         }
     }
@@ -86,6 +118,10 @@
     &__cardLogo{
         max-width: 100%;
         max-height: 100%;
+
+        .swipingBlock--isBig &{
+            display: none;
+        }
     }
 
     &__cardText{
@@ -100,6 +136,11 @@
         position: absolute;
         left: 16px;
         top: 16px;
+        display: none;
+
+        .swipingBlock--isBig &{
+            display: block;
+        }
     }
 
     &__pagination{
@@ -113,11 +154,18 @@
         --swiper-pagination-bullet-height: 12px;
         --swiper-pagination-bullet-horizontal-gap: 6px;
     }
-}
 
-.fakeImg{
-    //background-color: #3c3f41;
-    background-color: tomato;
-    width: 128px;
-    height: 28px;
+    &__openBtn{
+        @media (max-width: $screenWidth--mdMax) {
+            display: none;
+        }
+
+        &:after{
+            content: 'Показать все';
+
+            .collapsingBlock--isOpen &{
+                content: 'Свернуть';
+            }
+        }
+    }
 }

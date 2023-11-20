@@ -9,13 +9,13 @@ export const useCollapse=()=>{
     const openRepairBrandBlock=document.querySelector('.openRepairBrandBlock')
     const openRepairTechBlock=document.querySelector('.openRepairTechBlock')
 
-    // openMainManifesto.addEventListener('click',()=>{
-    //     if (mainManifesto.classList.contains('mainManifesto--isOpen')){
-    //         mainManifesto.classList.remove('mainManifesto--isOpen')
-    //     }else {
-    //         mainManifesto.classList.add('mainManifesto--isOpen')
-    //     }
-    // })
+    openMainManifesto.addEventListener('click',()=>{
+        if (mainManifesto.classList.contains('collapsingBlock--isOpen')){
+            mainManifesto.classList.remove('collapsingBlock--isOpen')
+        }else {
+            mainManifesto.classList.add('collapsingBlock--isOpen')
+        }
+    })
     openRepairBrandBlock.addEventListener('click',()=>{
         console.log(123)
         if (repairBrandBlock.classList.contains('collapsingBlock--isOpen')){

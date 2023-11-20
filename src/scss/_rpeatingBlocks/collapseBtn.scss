@@ -16,9 +16,6 @@
     transition: background-color .3s ease-in-out;
     margin-left: 16px;
 
-    @media (max-width: $screenWidth--mdMax) {
-        display: none;
-    }
     @media (min-width: $screenWidth--xs) {
         margin-left: 24px;
     }

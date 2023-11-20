@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 export const useSwiper=()=>{
-    const swiper = new Swiper(".swiper", {
+    const cardsSwiper = new Swiper(".cardsSwiper", {
         modules: [Pagination],
         spaceBetween: 16,
 
@@ -27,6 +27,25 @@ export const useSwiper=()=>{
         breakpoints:{
             768:{
                 enabled: false,
+                loop: false,
+                spaceBetween: 0,
+            },
+        },
+    });
+
+    const navSwiper = new Swiper(".navSwiper", {
+        spaceBetween: 4,
+
+        slidesPerView: 'auto',          //сколько слайдов в контейнере
+        loop: true,                     //зацикленность слайдов
+
+        mousewheel: true,
+        keyboard: true,
+
+        breakpoints:{
+            992:{
+                enabled: false,
+                loop: false,
                 spaceBetween: 0,
             },
         },

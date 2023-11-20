@@ -213,133 +213,158 @@
         </header>
         <main class="prime__content main">
             <h1 class="main__block mainHeader">Услуги и сервисы</h1>
-            <nav class="main__block mainNav"></nav>
-            <article class="main__block mainManifesto collapsingBlock"></article>
+            <nav class="main__block mainNav">
+                <div class="mainNav__viewer navSwiper">
+                    <ul class="mainNav__list swiper-wrapper">
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Ремонтируемые бренды</a>
+                        </li>
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Ремонтируемые устройства</a>
+                        </li>
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Цены на услуги</a>
+                        </li>
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Адреса сервисных центров</a>
+                        </li>
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Специальные цены</a>
+                        </li>
+                        <li class="mainNav__item swiper-slide">
+                            <a class="mainNav__link" href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <article class="main__block mainManifesto collapsingBlock">
+                <picture class="mainManifesto__imgMask">
+                    <source srcset="./assets/img/logoPhoto/logoPhoto_oversize_500.png" media="(min-width: 1800px)">
+                    <source srcset="./assets/img/logoPhoto/logoPhoto_xl_740.png" media="(min-width: 1200px)">
+                    <source srcset="./assets/img/logoPhoto/logoPhoto_sm_600.png" media="(min-width: 576px)">
+                    <img class="mainManifesto__img" src="./assets/img/logoPhoto/logoPhoto_xs_575.png" alt="Картинка с размерами">
+                </picture>
+                <div class="mainManifesto__text">
+                    <p class="mainManifesto__p">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="mainManifesto__p">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                    <p class="mainManifesto__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate deserunt, dolorum enim eveniet excepturi facere fugiat illo itaque maxime molestias necessitatibus nisi quaerat quasi quia quis repellat repudiandae vel voluptate voluptates. Deleniti, dolorem expedita facere inventore numquam provident quaerat recusandae vero voluptatem voluptatibus! Nostrum, qui sequi. Consectetur doloribus eligendi quidem. Ab autem cupiditate dolores explicabo, facilis id placeat possimus quam quas, quo reiciendis repellendus unde ut veritatis, voluptates! Deserunt enim eveniet necessitatibus, placeat praesentium, quibusdam sed sint sunt temporibus unde ut veniam veritatis voluptatibus. Dolorum labore repellat rerum tenetur! Consequuntur delectus dicta facilis illum incidunt mollitia nobis perspiciatis quae quas, quod. Cum doloremque ducimus obcaecati quis soluta. Ad alias animi architecto asperiores aut beatae cum, esse est fugit inventore libero magni odit quaerat! Aliquid, amet consequuntur deleniti dignissimos eaque temporibus. Amet dicta dolores dolorum laborum repellat sed vitae. Ab, adipisci aperiam architecto asperiores aut autem consequatur deleniti dolorem dolores eius esse ex expedita harum incidunt ipsum itaque iure magni maxime minima minus modi necessitatibus nihil obcaecati porro quaerat quidem ratione reiciendis repellat ullam voluptatum. Dolorum enim maiores possimus recusandae sed. Ab animi aspernatur assumenda consectetur corporis, cumque deserunt earum enim excepturi explicabo ipsum libero magnam, magni minus nihil nobis nulla numquam perferendis quam quas repellendus, sint veritatis voluptatem. Cum delectus dolore facere magni minus quaerat sequi sit! Asperiores aut debitis delectus earum et, iste! Atque blanditiis consectetur dolores eligendi esse in, ipsam quae qui quod recusandae repellendus reprehenderit saepe vel veniam voluptatum? Atque beatae commodi consequuntur error, esse et excepturi exercitationem facilis fuga hic iure maxime minima quidem, reiciendis repudiandae veniam voluptatem? Asperiores cum debitis delectus error facilis illo incidunt quibusdam reprehenderit saepe, tempore. Aliquid cum eius et excepturi exercitationem facere illo, illum, in, inventore iste laboriosam neque nulla odio optio pariatur qui saepe sed similique voluptatem voluptates. Repellendus?
+                    </p>
+                </div>
+                <button class="mainManifesto__openBtn collapseBtn openMainManifesto" title="Показать все"></button>
+            </article>
             <section class="main__block swipingBlock collapsingBlock repairBrandBlock">
-                <h1 class="main__blockHeader swipingBlock__header">Ремонт техники различных брендов</h1>
-                <div class="swipingBlock__viewer swiper">
-                    <ul class="swipingBlock__contentList swiper-wrapper">
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/lenovo.png" alt="lenovo">-->
-                                <div class="fakeImg"></div>
+                <h1 class="main__blockHeader main__blockHeader--marginFix swipingBlock__header">Ремонт техники различных брендов</h1>
+                <div class="swipingBlock__viewer cardsSwiper">
+                    <ul class="swipingBlock__list swiper-wrapper">
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/lenovo.png" alt="lenovo">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/samsung.png" alt="samsung">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/samsung.png" alt="samsung">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/apple.png" alt="apple">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/apple.png" alt="apple">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/viewSonic.png" alt="viewSonic">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/viewSonic.png" alt="viewSonic">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/bosch.png" alt="bosch">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/bosch.png" alt="bosch">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/hp.png" alt="hp">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/hp.png" alt="hp">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/acer.png" alt="acer">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/acer.png" alt="acer">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/sony.png" alt="sony">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/sony.png" alt="sony">
                             </a>
                         </li>
 
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/sony.png" alt="lenovo">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/sony.png" alt="lenovo">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/samsung.png" alt="samsung">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/samsung.png" alt="samsung">
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card" href="#" title="lenovo">
-<!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/apple.png" alt="apple">-->
-                                <div class="fakeImg"></div>
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
+                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/apple.png" alt="apple">
                             </a>
                         </li>
                     </ul>
                     <div class="swipingBlock__pagination swiper-pagination"></div>
                 </div>
-                <button class="swipingBlock__openBtn collapseBtn openRepairBrandBlock" title="Показать все">Показать все</button>
+                <button class="swipingBlock__openBtn collapseBtn openRepairBrandBlock" title="Показать все"></button>
             </section>
-            <section class="main__block swipingBlock collapsingBlock repairTechBlock">
+            <section class="main__block swipingBlock swipingBlock--isBig collapsingBlock repairTechBlock">
                 <h1 class="main__blockHeader swipingBlock__header">Ремонт техники различных брендов</h1>
-                <div class="swipingBlock__viewer swiper">
-                    <ul class="swipingBlock__contentList swiper-wrapper">
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
+                <div class="swipingBlock__viewer cardsSwiper">
+                    <ul class="swipingBlock__list swiper-wrapper">
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт ноутбуков</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/samsung.png" alt="samsung">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт планшетов</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/apple.png" alt="apple">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт ПК</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/viewSonic.png" alt="viewSonic">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт мониторов</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/bosch.png" alt="bosch">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт принтеров</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/bosch.png" alt="bosch">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт кондиционеров</span>
                             </a>
                         </li>
-                        <li class="swipingBlock__contentItem swiper-slide">
-                            <a class="swipingBlock__card swipingBlock__card--isBig" href="#" title="lenovo">
-                                <!--                                <img class="swipingBlock__cardLogo" src="./assets/img/brands/bosch.png" alt="bosch">-->
+                        <li class="swipingBlock__item swiper-slide">
+                            <a class="swipingBlock__card" href="#">
                                 <span class="swipingBlock__cardText">Ремонт буханки</span>
                             </a>
                         </li>
                     </ul>
                     <div class="swipingBlock__pagination swiper-pagination"></div>
                 </div>
-                <button class="swipingBlock__openBtn collapseBtn openRepairTechBlock" title="Показать все">Показать все</button>
+                <button class="swipingBlock__openBtn collapseBtn openRepairTechBlock"></button>
             </section>
             <section class="main__block tableBlock"></section>
         </main>
