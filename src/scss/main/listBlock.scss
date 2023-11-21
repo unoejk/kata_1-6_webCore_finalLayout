@@ -1,12 +1,9 @@
 
 .listBlock{
-    //background-color: tomato;
-    //background-color: #3c3f41;
     //width: 100%;
 
     &__header{}
     &__viewer{
-        //background-color: chartreuse;
         padding: 0 16px;
         //overflow: visible;
         position: relative;
@@ -38,7 +35,6 @@
         }
         &:before{
             background: linear-gradient(90deg, $color--background--dark 16.84%, transparent 100%);
-            //background-color: tomato;
             left: 0;
         }
         &:after{
@@ -125,9 +121,7 @@
 
     &__cardText{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
@@ -155,8 +149,14 @@
     }
 
     &__openBtn{
-        @media (max-width: $screenWidth--mdMax) {
-            display: none;
+        display: none;
+        margin-left: 24px;
+
+        @media (min-width: $screenWidth--lg) {
+            display: block;
+        }
+        @media (min-width: $screenWidth--xl) {
+            margin-left: 32px;
         }
 
         &:after{

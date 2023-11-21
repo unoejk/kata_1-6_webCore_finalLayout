@@ -59,10 +59,7 @@
 
     &__item{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 18px; /* 128.571% */
         letter-spacing: 0.2px;
 
@@ -101,9 +98,7 @@
             display: none;
 
             color: $color--font--light;
-            font-family: $fontFamily;
             font-size: 14px;
-            font-style: normal;
             font-weight: 500;
             line-height: 16px; /* 114.286% */
 
@@ -116,6 +111,7 @@
             }
         }
     }
+
     &__data{
         display: flex;
         flex-direction: column;
@@ -128,9 +124,7 @@
 
         &:before{
             color: $color--font--light;
-            font-family: $fontFamily;
             font-size: 14px;
-            font-style: normal;
             font-weight: 500;
             line-height: 16px; /* 114.286% */
 
@@ -157,6 +151,7 @@
                 content: 'Ремонтные услуги';
             }
         }
+
         &--price{
             @media (min-width: $screenWidth--md) {}
 
@@ -164,6 +159,7 @@
                 content: 'Цена';
             }
         }
+
         &--time{
             @media (min-width: $screenWidth--md) {
             }
@@ -189,9 +185,11 @@
             }
         }
     }
+
     &__orderBtn{
         width: fit-content;
     }
+
     &__pagination{
         position: static;
         margin-top: 16px;
@@ -217,10 +215,7 @@
 
     &__warningText{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 20px; /* 142.857% */
         letter-spacing: 0.2px;
 
@@ -233,11 +228,10 @@
             margin-top: 32px;
         }
     }
+
     &__offerBtn{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;

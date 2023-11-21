@@ -23,7 +23,6 @@
 @import "scss/_setup/default";
 
 // _rpeatingBlocks
-@import "scss/_rpeatingBlocks/generalText";
 @import "scss/_rpeatingBlocks/topHeader";
 @import "scss/_rpeatingBlocks/roundBtn";
 @import "scss/_rpeatingBlocks/collapseBtn";
@@ -40,13 +39,6 @@
 @import "scss/sidebars/sbFooter";
 @import "scss/sidebars/sbForm";
 
-// sidebars
-@import "scss/sidebars/overlay";
-@import "scss/sidebars/sidebar";
-@import "scss/sidebars/sbNav";
-@import "scss/sidebars/sbFooter";
-@import "scss/sidebars/sbForm";
-
 // main
 @import "scss/main/main";
 @import "scss/main/mainHeader";
@@ -55,6 +47,6 @@
 @import "scss/main/listBlock";
 @import "scss/main/tableBlock";
 
-// _setup
+// _setup/patterns
 @import "scss/_setup/patterns";
 

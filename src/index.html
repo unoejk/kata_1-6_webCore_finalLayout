@@ -109,7 +109,7 @@
         <form class="sbForm">
             <h1 class="sbForm__header">Заказать звонок</h1>
             <label class="sbForm__label">
-                <input class="sbForm__input" type="tel" placeholder="Телефон">
+                <input class="sbForm__input" type="tel" placeholder="Телефон" required>
             </label>
             <p class="sbForm__warningText">
                 Нажимая “отправить”, вы даете согласие на <a class="sbForm__textLink" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="sbForm__textLink" href="#">политикой конфиденциальности</a>
@@ -131,16 +131,16 @@
         <form class="sbForm">
             <h1 class="sbForm__header">Обратная связь</h1>
             <label class="sbForm__label">
-                <input class="sbForm__input" type="text" placeholder="Имя">
+                <input class="sbForm__input" type="text" placeholder="Имя" required>
             </label>
             <label class="sbForm__label">
-                <input class="sbForm__input" type="tel" placeholder="Телефон">
+                <input class="sbForm__input" type="tel" placeholder="Телефон" required>
             </label>
             <label class="sbForm__label">
-                <input class="sbForm__input" type="email" placeholder="Электронная почта">
+                <input class="sbForm__input" type="email" placeholder="Электронная почта" required>
             </label>
             <label class="sbForm__label sbForm__labelForTextarea">
-                <textarea class="sbForm__textArea" placeholder="Сообщение"></textarea>
+                <textarea class="sbForm__textArea" placeholder="Сообщение" required></textarea>
             </label>
             <p class="sbForm__warningText">
                 Нажимая “отправить”, вы даете согласие на <a class="sbForm__textLink" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="sbForm__textLink" href="#">политикой конфиденциальности</a>
@@ -160,9 +160,9 @@
                         </svg>
                     </button>
                 </div>
-                <div class="prime__headerLogoBlock topHeader__block">
-                    <a class="topHeader__item topHeader__logoLink" href="#"></a>
-                </div>
+                <a class="prime__headerLogoBlock topHeader__block topHeader__logoLink" href="#">
+                    <img class="topHeader__item topHeader__logoImg" src="/src/assets/svg/logo.svg" alt="Логотип">
+                </a>
             </div>
             <div class="prime__headerRightBlock topHeader__block">
                 <div class="prime__callbackBlock topHeader__block">
@@ -258,7 +258,7 @@
                 <button class="mainManifesto__openBtn collapseBtn openMainManifesto" title="Показать все"></button>
             </article>
             <section class="main__block listBlock collapsingBlock repairBrandBlock" id="repairBrandBlock">
-                <h1 class="main__blockHeader main__blockHeader--marginFix listBlock__header">Ремонт техники различных брендов</h1>
+                <h2 class="main__blockHeader main__blockHeader--marginFix listBlock__header">Ремонт техники различных брендов</h2>
                 <div class="listBlock__viewer cardsSwiper">
                     <ul class="listBlock__list swiper-wrapper">
                         <li class="listBlock__item swiper-slide">
@@ -323,7 +323,7 @@
                 <button class="listBlock__openBtn collapseBtn openRepairBrandBlock" title="Показать все"></button>
             </section>
             <section class="main__block listBlock listBlock--isBig collapsingBlock repairTechBlock" id="repairTechBlock">
-                <h1 class="main__blockHeader listBlock__header">Ремонт различных видов техники</h1>
+                <h2 class="main__blockHeader listBlock__header">Ремонт различных видов техники</h2>
                 <div class="listBlock__viewer cardsSwiper">
                     <ul class="listBlock__list swiper-wrapper">
                         <li class="listBlock__item swiper-slide">
@@ -367,7 +367,7 @@
                 <button class="listBlock__openBtn collapseBtn openRepairTechBlock"></button>
             </section>
             <section class="main__block tableBlock" id="services">
-                <h1 class="main__blockHeader tableBlock__header">Цены на услуги</h1>
+                <h2 class="main__blockHeader tableBlock__header">Цены на услуги</h2>
                 <div class="tableBlock__viewer cardsSwiper">
                     <ul class="tableBlock__list swiper-wrapper">
                         <li class="tableBlock__item tableBlock__item--capital">

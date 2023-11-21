@@ -1,15 +1,15 @@
 
 .mainNav{
-    margin: 24px 0;
+    padding: 24px 0;
 
     @media (min-width: $screenWidth--xs) {}
     @media (min-width: $screenWidth--sm) {}
     @media (min-width: $screenWidth--lg) {
-        margin: 8px 0;
+        padding: 8px 0;
     }
     @media (min-width: $screenWidth--xl) {}
     @media (min-width: $screenWidth--oversize) {
-        margin: 8px 0 16px 0;
+        padding: 8px 0 16px 0;
     }
 
     &__header{}
@@ -71,9 +71,7 @@
 
     &__link{
         color: $color--font--light;
-        font-family: $fontFamily;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;

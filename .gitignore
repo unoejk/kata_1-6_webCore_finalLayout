@@ -1,6 +1,13 @@
 node_modules/
-dist/
 .idea/
 yarn.lock
 yarn-error.log
 src/assets/img/testImg.jpg
+package-lock.json
+
+dist/
+
+#webpack.config.js
+#package.json
+#.gitignore
+#src/

@@ -1,9 +1,7 @@
 
 .collapseBtn{
     color: $color--font--dark;
-    font-family: $fontFamily;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
@@ -14,14 +12,6 @@
     padding-right: 16px;
     border-radius: 4px;
     transition: background-color .3s ease-in-out;
-    margin-left: 16px;
-
-    @media (min-width: $screenWidth--xs) {
-        margin-left: 24px;
-    }
-    @media (min-width: $screenWidth--xl) {
-        margin-left: 32px;
-    }
 
     &:before{
         content: url("/src/assets/svg/dobleArrow.svg");

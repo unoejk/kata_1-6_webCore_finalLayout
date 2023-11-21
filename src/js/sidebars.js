@@ -51,7 +51,7 @@ export const useSidebars=()=>{
         sidebarCall.classList.remove('sidebar--isOpen')
         sidebarChat.classList.remove('sidebar--isOpen')
         overlay.classList.remove('overlay--isOpen--forRightSidebar')
-        if (window.innerWidth<1200){
+        if (window.innerWidth<1200 || window.innerWidth>=1800){
             sidebarBurger.classList.remove('sidebar--isOpen')
             overlay.classList.remove('overlay--isOpen--forLeftSidebar')
         }

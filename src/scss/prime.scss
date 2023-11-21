@@ -3,14 +3,12 @@
     display: flex;
     flex-direction: column;
     background-color: $color--background--dark;
-    //flex-grow: 0;
-    //flex-shrink: 0;
 
     @media (min-width: $screenWidth--oversize) {
         gap: 32px;
     }
 
-    .topHeader{
+    &__header{
         box-shadow: inset 0 -2px 0 -1px $color--border--lightPlus;
         z-index: 1;
 
@@ -34,8 +32,6 @@
             }
         }
     }
-
-    &__header{}
 
     &__content{
         width: 100vw;
@@ -82,9 +78,7 @@
 
     &__footerText{
         color: $color--font--light;
-        font-family: $fontFamily;
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px; /* 114.286% */
         text-align: center;
@@ -96,10 +90,6 @@
             &:last-child{
                 text-align: right;
             }
-        }
-
-        &+&{
-            margin-top: 0;
         }
     }
 

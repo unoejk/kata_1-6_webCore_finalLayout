@@ -8,7 +8,6 @@
     opacity: 0.9605;
 
     visibility: hidden;
-    background-color: transparent;
     transition-property: background-color, visibility;
     transition-duration: .3s;
     transition-timing-function: ease-in-out, step-end;
@@ -20,6 +19,9 @@
 
         @media (min-width: $screenWidth--xl) {
             visibility: hidden;
+        }
+        @media (min-width: $screenWidth--oversize) {
+            visibility: visible;
         }
     }
 

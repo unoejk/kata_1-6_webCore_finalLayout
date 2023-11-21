@@ -19,9 +19,7 @@
 
     &__header{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 24px;
-        font-style: normal;
         font-weight: 700;
         line-height: 32px; /* 133.333% */
         letter-spacing: -0.6px;
@@ -54,9 +52,7 @@
 
     &__input,&__textArea{
         color: $color--font--dark;
-        font-family: $fontFamily;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
@@ -88,9 +84,7 @@
 
     &__warningText{
         color: $color--font--light;
-        font-family: $fontFamily;
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px; /* 114.286% */
     }
