@@ -9,5 +9,4 @@ dist/
 
 #webpack.config.js
 #package.json
-#.gitignore
 #src/
