@@ -7,6 +7,6 @@ package-lock.json
 
 #dist/
 
-webpack.config.js
-package.json
-src/
+#webpack.config.js
+#package.json
+#src/

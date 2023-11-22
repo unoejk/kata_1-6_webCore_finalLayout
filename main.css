@@ -1790,12 +1790,6 @@ a, a:hover, a:active {
     margin-left: 32px;
   }
 }
-.mainManifesto__openBtn:after {
-  content: "Читать далее";
-}
-.collapsingBlock--isOpen .mainManifesto__openBtn:after {
-  content: "Свернуть";
-}
 
 .listBlock__viewer {
   padding: 0 16px;
@@ -1952,21 +1946,17 @@ a, a:hover, a:active {
   display: none;
   margin-left: 24px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .listBlock__openBtn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (min-width: 1200px) {
   .listBlock__openBtn {
     margin-left: 32px;
   }
-}
-.listBlock__openBtn:after {
-  content: "Показать все";
-}
-.collapsingBlock--isOpen .listBlock__openBtn:after {
-  content: "Свернуть";
 }
 
 .tableBlock__viewer {
