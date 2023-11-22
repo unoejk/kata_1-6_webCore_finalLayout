@@ -106,13 +106,5 @@
         @media (min-width: $screenWidth--xl) {
             margin-left: 32px;
         }
-
-        &:after{
-            content: 'Читать далее';
-
-            .collapsingBlock--isOpen &{
-                content: 'Свернуть';
-            }
-        }
     }
 }

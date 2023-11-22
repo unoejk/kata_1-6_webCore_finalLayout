@@ -152,19 +152,11 @@
         display: none;
         margin-left: 24px;
 
-        @media (min-width: $screenWidth--lg) {
-            display: block;
+        @media (min-width: $screenWidth--md) {
+            display: flex;
         }
         @media (min-width: $screenWidth--xl) {
             margin-left: 32px;
-        }
-
-        &:after{
-            content: 'Показать все';
-
-            .collapsingBlock--isOpen &{
-                content: 'Свернуть';
-            }
         }
     }
 }
